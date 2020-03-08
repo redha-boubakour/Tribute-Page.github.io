@@ -5,6 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #767064;
   color: #161413;
+  font-size: 1.6rem;
   margin: 0;
   padding: 0;
   display: grid;
@@ -26,7 +27,10 @@ a {
 header {
   grid-area: header;
   background-color: #cb2a24;
-  padding: 5px;
+  line-height: 0.2;
+  position: fixed;
+  overflow: auto;
+  width: 100%;
 }
 
 #img-div {
@@ -35,10 +39,11 @@ header {
 }
 
 #image {
-  max-width: 60%;
+  max-width: 70%;
   background-color: #cb2a24;
   border-radius: 20%;
   padding: 5px;
+  margin-top: 115px;
 }
 
 #img-caption {
@@ -50,12 +55,15 @@ header {
   grid-area: time-line;
   background-color: blueviolet;
   padding: 10px;
+  line-height: 1.6;
+  display: list-item;
 }
 
 #best-quote {
   grid-area: best-quote;
   background-color: darkgoldenrod;
-  padding: 10px;
+  padding: 20px;
+  font-style: italic;
 }
 
 ul {
@@ -66,4 +74,5 @@ ul {
 footer {
   grid-area: footer;
   background-color: chartreuse;
+  padding: 10px;
 }
