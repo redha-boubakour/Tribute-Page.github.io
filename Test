@@ -1,0 +1,75 @@
+.galery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(4, 10vw);
+  grid-gap: 16px;
+  grid-template-areas:
+    "pic1 pic2 pic3"
+    "pic4 pic5 pic6"
+    "pic7 pic8 pic9";
+}
+
+#galery img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+      <div id="galery" class="galery">
+        <img
+          id="pic1"
+          class="pic"
+          src="http://3.bp.blogspot.com/--57s3xovrzo/Uco83EZJcGI/AAAAAAAAFAg/kofsZ2eDJZg/s1600/king+of+pop+michael+jackson.jpg"
+          alt="pic1"
+        />
+        <img
+          id="pic2"
+          class="pic"
+          src="http://3.bp.blogspot.com/-1g83Oic1Who/Uco84EpTNtI/AAAAAAAAFAo/76B1sY424J4/s1600/michael+jackson+bad.jpg"
+          alt="pic2"
+        />
+        <img
+          id="pic3"
+          class="pic"
+          src="http://2.bp.blogspot.com/-smRYHiKAHv8/Uco89I4S3iI/AAAAAAAAFBE/_MhQSxrUGVI/s1600/michael+jackson+beat+it.jpg"
+          alt="pic3"
+        />
+        <img
+          id="pic4"
+          class="pic"
+          src="http://1.bp.blogspot.com/-jUf5cDX82EM/Uco89H1DsdI/AAAAAAAAFA8/DBqXw9TSVCE/s1600/michael+jackson+photo.jpg"
+          alt="pic4"
+        />
+        <img
+          id="pic5"
+          class="pic"
+          src="http://4.bp.blogspot.com/-qcV3fk1XUIM/Uco8-L72a-I/AAAAAAAAFBQ/uI7XGNWWnYw/s1600/michael+jackson+songs.jpg"
+          alt="pic5"
+        />
+        <img
+          id="pic6"
+          class="pic"
+          src="http://2.bp.blogspot.com/-o5gz5nlcjSs/Uco9BepVuhI/AAAAAAAAFB4/xnDe-fimk9g/s1600/michael+jackson+thriller.jpg"
+          alt="pic6"
+        />
+        <img
+          id="pic7"
+          class="pic"
+          src="http://2.bp.blogspot.com/-kVDr5E1p0lE/Uco81KWvPgI/AAAAAAAAFAQ/6BaGS-pgu3I/s1600/Michael+Jackson.jpg"
+          alt="pic7"
+        />
+        <img
+          id="pic8"
+          class="pic"
+          src="http://4.bp.blogspot.com/-5w_a-jMwOKQ/Uco8_W3OHyI/AAAAAAAAFBY/CvoBn75aFV0/s1600/michael-jackson-bad.jpg"
+          alt="pic8"
+        />
+        <img
+          id="pic9"
+          class="pic"
+          src="http://3.bp.blogspot.com/-8amuXX4MoDE/Uco9AE3rcaI/AAAAAAAAFBo/PKpyolRDBy8/s1600/michael-jackson-songs.jpg"
+          alt="pic9"
+        />
+      </div>
+

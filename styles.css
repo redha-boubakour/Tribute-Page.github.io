@@ -8,16 +8,21 @@ body {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas:
-    "header"
-    "img-div"
-    "time-line"
-    "best-quote"
-    "footer";
   text-align: center;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header       header"
+    "img-div      img-div"
+    "time-line    time-line"
+    "filmography  tours"
+    "galery       galery"
+    "best-quote   best-quote"
+    "footer       footer";
 }
 
 a {
@@ -29,7 +34,6 @@ header {
   background-color: #cb2a24;
   line-height: 0.2;
   position: fixed;
-  overflow: auto;
   width: 100%;
 }
 
@@ -51,12 +55,22 @@ header {
   font-size: large;
 }
 
+.block {
+  padding: 30px;
+  background-color: blueviolet;
+}
+
 #time-line {
   grid-area: time-line;
-  background-color: blueviolet;
-  padding: 10px;
-  line-height: 1.6;
-  display: list-item;
+  line-height: 2.5;
+}
+
+#filmography {
+  grid-area: filmography;
+}
+
+#tours {
+  grid-area: tours;
 }
 
 #best-quote {
