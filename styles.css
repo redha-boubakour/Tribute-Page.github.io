@@ -20,7 +20,6 @@ body {
     "img-div      img-div"
     "time-line    time-line"
     "filmography  tours"
-    "galery       galery"
     "best-quote   best-quote"
     "footer       footer";
 }
@@ -57,12 +56,13 @@ header {
 
 .block {
   padding: 30px;
-  background-color: blueviolet;
 }
 
 #time-line {
   grid-area: time-line;
   line-height: 2.5;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #filmography {
@@ -75,8 +75,7 @@ header {
 
 #best-quote {
   grid-area: best-quote;
-  background-color: darkgoldenrod;
-  padding: 20px;
+  padding: 40px;
   font-style: italic;
 }
 
@@ -87,6 +86,5 @@ ul {
 
 footer {
   grid-area: footer;
-  background-color: chartreuse;
   padding: 10px;
 }
