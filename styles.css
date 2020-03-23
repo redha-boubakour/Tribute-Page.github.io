@@ -87,6 +87,10 @@ ul {
 footer {
   grid-area: footer;
   padding: 10px;
+  background-color: #cb2a24;
+  line-height: 0.2;
+  justify-items: center;
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -113,5 +117,6 @@ footer {
   #tours {
     padding-left: 0;
     padding-right: 35px;
+    font-size: 18px;
   }
 }
