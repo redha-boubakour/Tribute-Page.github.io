@@ -18,7 +18,7 @@ body {
   grid-template-areas:
     "header       header"
     "img-div      img-div"
-    "time-line    time-line"
+    "tribute-info tribute-info"
     "filmography  tours"
     "best-quote   best-quote"
     "footer       footer";
@@ -58,9 +58,9 @@ header {
   padding: 30px;
 }
 
-#time-line {
-  grid-area: time-line;
-  line-height: 2.5;
+#tribute-info {
+  grid-area: tribute-info;
+  line-height: 1.5;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -87,4 +87,31 @@ ul {
 footer {
   grid-area: footer;
   padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "header"
+      "img-div"
+      "tribute-info"
+      "filmography"
+      "tours"
+      "best-quote"
+      "footer";
+  }
+
+  #image {
+    max-width: 90vw;
+  }
+
+  #tribute-info,
+  #filmography,
+  #tours {
+    padding-left: 0;
+    padding-right: 35px;
+  }
 }
