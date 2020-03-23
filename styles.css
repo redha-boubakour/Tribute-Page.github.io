@@ -25,7 +25,12 @@ body {
 }
 
 a {
-  text-decoration: none;
+  color: #161413;
+}
+
+a:hover {
+  transition: ease 0.5s;
+  color: #cb2a24;
 }
 
 header {
@@ -67,6 +72,7 @@ header {
 
 #filmography {
   grid-area: filmography;
+  max-width: ;
 }
 
 #tours {
@@ -90,7 +96,6 @@ footer {
   background-color: #cb2a24;
   line-height: 0.2;
   justify-items: center;
-  padding-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
